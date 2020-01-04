@@ -16,9 +16,6 @@ let webConfig = {
   entry: {
     web: path.join(__dirname, '../src/renderer/main.js')
   },
-  externals: {
-    globalConfig: 'globalConfig'
-  },
   module: {
     rules: [
       {
