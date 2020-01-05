@@ -12,4 +12,6 @@ var globalConfig = {
     topic: 'notice_server'
   }
 };
+export var servers = globalConfig.servers
+export var activemq = globalConfig.activemq
 

@@ -31,6 +31,7 @@
 
 <script>
   import SystemInformation from './LandingPage/SystemInformation'
+  import { combineChunksAfterUploadSuccess } from '@/api/FileUpload'
 
   export default {
     name: 'landing-page',
@@ -39,6 +40,11 @@
       open (link) {
         this.$electron.shell.openExternal(link)
       }
+    },
+    mounted() {
+      combineChunksAfterUploadSuccess().then(res => {}).catch(e => {
+        this.$message.error("d d d d d");
+      })
     }
   }
 </script>
